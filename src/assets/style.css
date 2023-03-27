@@ -1,6 +1,7 @@
 :root{
     --primary-color: #c0bebe;
-    --border-color: #ddd;
+    --secondary-color: #dddddd;
+    --tertiary-color: rgba(70, 69, 69, 0.356);
 }
 
 *{
@@ -13,7 +14,8 @@
 
 a{
     text-decoration: none;
-    color: black;
+    color: var(--secondary-color);
+    text-shadow: 1px 2px 1px var(--tertiary-color);
 }
 
 .main-container{
@@ -26,46 +28,124 @@ a{
     background-color: var(--primary-color);
 }
 
+.header{
+    height: 100px;
+}
+
 .top-header{
     min-width: 1024px;
     height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--secondary-color);
     
 }
 
-.title{
-    /* font-family: 'Montserrat', sans-serif; */
-    
-    font-size: 32px;
-    padding: 15px 10px;
-    
+.main-title{
+    display: flex;
+    align-items: center;
 }
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    text-shadow: 1px 2px 1px var(--tertiary-color);
+}   
+
 
 .main-nav{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 10px;
-    padding: 25px;
     text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: var(--secondary-color);
+}
+
+.nav{
+    padding: 8px;
+    transition: background 0.7s ease-in-out;
+    border-radius: 8px;
+}
+
+.nav:hover{
+    background-color: var(--tertiary-color);
 }
 
 .img-capa-bg{
-    border: 2px solid #ddd;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
 }
+
+
+
+
+
+
+
+/* estilo da pagina projeto */
+
+.section-content{
+    width: 516px;
+    height: 778px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+.title-project{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    text-shadow: 1px 2px 1px var(--tertiary-color);
+}
+
+
+.paragraph{
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 10px;
+    line-height: 25px;
+    text-align: justify;
+    color: #5e5656;
+}
+
+.project-bg{
+    align-content: center;
+}
+
+
+
+
+
+
+/* inicio do estilo do sumario */
 
 .img-sumario-bg{
     max-width: 516px;
     height: 804px;
-    
 }
+
+
+/* estilo da pagina contato */
+
+
+
+
 
 .footer{
     height: 50px;
-    border-top: 2px solid #ddd;
-    color: #ddd;
-    /* font-size: 1.2rem; */
+    /* border-top: 2px solid var(--secondary-color); */
+    color: var(--tertiary-color);
+}
+
+.text-footer{
+    font-family: 'Open Sans', sans-serif;
 }
 
