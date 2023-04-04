@@ -4,41 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mutatis Mutandis</title>
+   
+    <title>Mutatis.now</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto&family=Special+Elite&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
-<body class="main-container">
-    <header>
-        <nav class="top-header">
-            <div class="main-title">
-                <h1 class="title">Mutatis Mutandis</h1>
-            </div>
-            <div class="main-nav">
-                <a href="index.html" class="nav">home</a></li>
-                <a href="projeto.html" class="nav">projeto</a></li>
-                <a href="sumario.html" class="nav">capítulos</a></li>
-                <a href="contato.html" class="nav">contato</a></li>    
-            </div>
-        </nav>
-    </header>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="top-header">
+                <div class="main-title">
+                    <h1 class="title">Mutatis Mutandis</h1>
+                </div>
+                <div class="sub-title">
+                    <h2>capitulos</h2>
+                </div>
+                <div class="main-nav">
+                    <a href="index.html" class="nav">home</a>
+                    <a href="projeto.html" class="nav">projeto</a>
+                    <a href="sumario.html" class="nav">capítulos</a>
+                    <a href="contato.html" class="nav">contato</a>    
+                </div>
+            </nav>
+        </header>
 
-    <section class="sumario-bg">
-    
     <aside class="nav-bar">
-        <a href="sumario.html">Prefácio</a>
-        <a href="intro.html">Introdução</a>            
-        <a href="capum.html">Capitulo Um</a>
-        <a href="capdois.html">Capitulo Dois</a>
-        <a href="captres.html">Capitulo Três</a>
-        <a href="capquatro.html">Capitulo Quatro</a>
+        <a class="item-bar" href="sumario.html">Prefácio</a>
+        <a class="item-bar" href="intro.html">Introdução</a>            
+        <a class="item-bar" href="capum.html">Capitulo Um</a>
+        <a class="item-bar" href="capdois.html">Capitulo Dois</a>
+        <a class="item-bar" href="captres.html">Capitulo Três</a>
+        <a class="item-bar" href="capquatro.html">Capitulo Quatro</a>
     </aside>
+    <div>
+        <h3 class="sub-title">capitulo dois</h3>
+    </div>
 
-    <main class="chapter">
-        <button class="btn-seta btn-voltar" id="btn-voltar">
-            <img src="assets/img/seta.png" alt="seta voltar">
-        </button>
+    <main class="main-container">
+        <div class="card-content">
+    <button class="btn-seta btn-voltar" id="btn-voltar">
+        <img src="assets/img/seta.png" alt="seta voltar">
+    </button>
 
         <ul class="list-text">
             <li class="cartao selecionado card-1">
@@ -65,9 +76,6 @@
                         vão se trancar.<br>
                     </p>    
                 </div>
-                <div>
-                    <p class="helena">Eduardo Palermo | Mutatis Mutandis</p>
-                </div>
             </li>
             <li class="cartao card-2">
                 <div>
@@ -90,9 +98,6 @@
                         perigosos demais.<br>
                     </p>    
                 </div>
-                <div>
-                    <p class="helena">Eduardo Palermo | Mutatis Mutandis</p>
-                </div>
             </li>
             <li class="cartao card-3">
                 <div>
@@ -114,9 +119,6 @@
                         pra poder contar.<br>
                     </p>    
                 </div>
-                <div>
-                    <p class="helena">Eduardo Palermo | Mutatis Mutandis</p>
-                </div>
             </li>
             <li class="cartao card-4">
                 <div>
@@ -137,23 +139,22 @@
                         pra um trocado a mais ganhar!<br>
                     </p>    
                 </div>
-                <div>
-                    <p class="helena">Eduardo Palermo | Mutatis Mutandis</p>
-                </div>
             </li>
         </ul>
 
         <button class="btn-seta" id="btn-avancar">
             <img src="assets/img/seta.png" alt="seta avançar">
         </button>
+        </div>
     </main>
-    </section>
-
+    <div>
+        <p class="helena">Eduardo Palermo | Mutatis Mutandis</p>
+    </div>
     <footer class="footer">
         <p class="text-footer">Desenvolvido por <a href="#">Eduardo Palermo</a></p>
     </footer>
 
     <script src="index.js"></script>
-    
+    </div>
 </body>
 </html>
